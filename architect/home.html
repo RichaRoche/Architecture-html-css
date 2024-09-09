@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <div class="nav-contents">
-            <div class="logo"><a href="#"><span>BR</span> Architects</a></div>
-            <div class="nav-left-contents">
+            <div class="logo"><a href="#home"><span>BR</span> Architects</a></div>
+            <div class="nav-left-contents"> <!--it is right contents,its a mistake-->
                 <ul>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#about">About</a></li>
@@ -20,9 +23,9 @@
         </div>
     </nav>
     <!-- home-contents -->
-     <div class="home-contents">
+     <div class="home-contents" id="home">
         <img src="assets/architect.jpg" alt="">
-        <div class="home-center-contents"><p><span>BR</span> Architects</p></div>
+        <div class="home-center-contents"><span>BR</span><p>Architects</p></div>
      </div>
      <!-- Project contents -->
       <div class="project-page" id="project">
@@ -46,7 +49,6 @@
         <div class="about-contents">
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam possimus, sint sunt tempora asperiores et magni, id provident laboriosam necessitatibus illum! Error magni corporis, fugit iusto, tempora sint praesentium quae fugiat a porro nemo dolores pariatur dolorem ut itaque voluptates? Suscipit doloribus minima accusamus cumque, voluptate non perferendis consequuntur.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, explicabo quos dignissimos incidunt quam aut molestias autem deleniti dolore maiores. Recusandae neque, ipsa ad harum aperiam praesentium numquam, consequuntur sunt facere iure doloribus. Tenetur assumenda nihil nesciunt delectus dicta, sequi corporis maiores earum eaque atque odit! Illum nihil expedita dicta.
             </p>
         </div>
         <div class="about-grid-contents">
@@ -85,11 +87,11 @@
         <div class="contact-header">Contact</div>
         <div class="contact-contents">
             <p>Lets get in touch and talk about your next project.</p>
-            <form action="#">
-                <input type="text" placeholder="Name"><br>
-                <input type="email" placeholder="Email"><br>
-                <input type="text" placeholder="Subject"><br>
-                <input type="text" placeholder="Comment"><br>
+            <form action="">
+                <input type="text" placeholder="Name" name="John"><br>
+                <input type="email" placeholder="Email" name="john@gmail.com"><br>
+                <input type="text" placeholder="Subject" name="hello"><br>
+                <input type="text" placeholder="Comment" name="hello"><br>
                 <button>SEND MESSAGE</button>
             </form>
         </div>
