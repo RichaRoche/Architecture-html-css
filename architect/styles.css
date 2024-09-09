@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 nav{
-    padding: 10px;
     background-color: white;
     max-width: 100%;
     padding: 10px;
@@ -16,12 +17,10 @@ nav{
 }
 .nav-contents{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .logo a{
-    padding: 5px;
-    padding-left: 10px;
+    padding: 5px 0px 0px 10px;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -53,7 +52,6 @@ nav{
 .home-contents img{
     height: auto;
     max-width: 100%;
-    z-index: -1;
 }
 .home-contents{
     padding:2px 10px 16px 10px;
@@ -65,11 +63,15 @@ nav{
     letter-spacing: 6px;
     position: absolute;
     top: 50%;
-    left: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .home-center-contents span{
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
     color: white;
     background-color:rgba(0, 0, 0, 0.7);
 }
@@ -86,12 +88,13 @@ nav{
     padding: 40px 0px 0px 0px;
     margin: 0 20px 0 20px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows:auto auto; 
-    row-gap: 5%;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 16px; /* Space between grid items */
 }
 .project-contents img{
-    width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .house1{
     position: relative;
@@ -113,15 +116,22 @@ nav{
     border-bottom: solid 1px #ccc;
 }
 .about-contents{
-    margin:30px 25px 10px 25px;
+    margin:30px 23px 10px 23px;
+}
+.about-contents p{
+    font-size: 17px;
+    font-weight: light;
 }
 .about-grid-contents{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 14px;
     margin: 30px 25px 50px 25px;
 }
 .about-grid-contents .person1 img{
-    width: 340px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
     filter: grayscale(70%);
 }
 .person1 h1{
@@ -135,7 +145,7 @@ nav{
     padding: 10px 0px 10px 0px;
 }
 .person1 button{
-    width: 95%;
+    width: 100%;
     border: none;
     padding: 12px;
     font-size: 20px;
@@ -156,7 +166,8 @@ nav{
     padding-top: 10px;
 }
 .contact-contents form input{
-    margin-top: 10px;
+    border: solid 1px #ccc;
+    margin-top: 15px;
     padding: 10px;
     width: 100%;
 }
@@ -178,7 +189,7 @@ nav{
     margin: 20px 25px 20px 25px;
 }
 .map-page img{
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 footer{
@@ -187,5 +198,45 @@ footer{
     background-color: black;
     text-align: center;
 }
-
+@media (min-width: 300px) and (max-width: 900px) {
+    .nav-left-contents{
+        display: none;
+    }
+    .about-grid-contents{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .person1 img{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .home-center-contents p span{
+        display: block;
+    }
+    .home-center-contents p{
+        display: none;
+    }
+    .home-contents{
+        padding: 0px;
+    }
+    .project-page{
+        padding: 0px;
+    }
+    .project-header{
+        padding: 10px 0px 10px 0px;
+        margin: 0px 10px;
+    }
+    .project-contents{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px 12px 0px 12px;
+        gap:16px; 
+    }
+    .project-contents img{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+}
 
