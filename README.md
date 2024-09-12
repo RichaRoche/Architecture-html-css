@@ -19,7 +19,7 @@ It's built with W3.CSS for responsive design, so it looks great on all devicesâ€
 
 ## How to use
 git clone <repo-url>
- <pre><code class="language-bash">git clone https://github.com/Richa/Architecture-html-css</code></pre>
+ <pre><code class="language-bash">git clone https://github.com/RichaRoche/Architecture-html-css</code></pre>
 
  ### Explanation:
 - **Added Note**: Acknowledges the use of https://www.w3schools.com/ while emphasizing that the code and customizations are my own.
